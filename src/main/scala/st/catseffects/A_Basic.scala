@@ -1,4 +1,4 @@
-package st.catseffetcs
+package st.catseffects
 
 import cats.effect.{IO, IOApp}
 
@@ -86,8 +86,7 @@ object A_Basic extends IOApp.Simple {
       """
         |包含多个生成器时，第一个生成器直到倒数第一个生成器都是 flatMap 操作，最后一个使用`map`操作。
         |如果最后一个是过滤器，那么会先使用`withFilter`再使用`map`
-        |
-        |""".stripMargin)
+        |v""".stripMargin)
     val l2 = List(1,2,3)
     val l2_1 = for
         x <- l2
